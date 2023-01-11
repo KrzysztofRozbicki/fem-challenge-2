@@ -274,6 +274,7 @@
     font-size: 1.25rem;
     line-height: 1.7;
     max-width: 825px;
+    margin-bottom: 0;
   }
 }
 .wrapper {
