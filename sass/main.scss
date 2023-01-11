@@ -1,8 +1,150 @@
 @use '../sass/utils/vars' as *;
+@use '../sass/components' as *;
 
-body {
-  font-size: 16px;
+.icon {
+  position: relative;
+  fill: currentColor;
+  display: inline-block;
+  &--button {
+    vertical-align: middle;
+    transform: translateY(-0.125rem);
+    margin-right: 0.25rem;
+  }
+}
+.body {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 400;
   color: $c-primary-700;
+  background-image: url('../assets/bg-main-mobile.png');
+  background-position-y: -15rem;
+  background-repeat: no-repeat;
+  font-size: $fs-primary-100;
+}
+
+.header {
+  display: none;
+}
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  &--header {
+  }
+  &--hero {
+    padding: 8.5rem 1.5rem 4.25rem;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  &__header {
+    @extend .text-700;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    @extend .text-400;
+    margin-bottom: 6.125rem;
+  }
+}
+
+.info {
+}
+
+.cta {
+  position: relative;
+  color: $c-primary-100;
+  &__background {
+    border-radius: 0.75rem;
+    height: 420px;
+    background-color: $c-primary-700;
+    background-image: url('../assets/bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -6.125rem);
+    width: 13rem;
+    margin-inline: auto;
+    z-index: 2;
+  }
+  &__box {
+    transform: translateY(-3rem);
+    margin-bottom: 1rem;
+    z-index: 3;
+    border-radius: 0.75rem;
+    padding: 3rem 2.25rem;
+    background-color: $bg-primary-500;
+  }
+  &__header {
+    @extend .text-600;
+    margin-bottom: 0.75rem;
+  }
+  &__text {
+    @extend .text-450;
+    margin-bottom: 2rem;
+    &--duration {
+      font-size: $fs-primary-125;
+      position: absolute;
+      transform: translateY(50%);
+    }
+  }
+  &__price {
+    display: inline-block;
+    @extend .text-900;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+.button {
+  display: block;
+  width: min((100vw - 4rem), 18.5rem);
+  margin-inline: auto;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  @extend .text-450;
+  font-weight: 700;
+  &--ios {
+    color: $c-primary-100;
+    background-color: $c-primary-700;
+    margin-bottom: 1rem;
+    &:hover,
+    &:focus {
+    }
+  }
+  &--android {
+    &:hover,
+    &:focus {
+    }
+  }
+}
+
+.footer {
+  margin: 0;
+  &__box {
+  }
+  &__text {
+    @extend .text-400;
+    margin-bottom: 4rem;
+    &--email {
+      text-decoration: none;
+      color: $c-primary-700;
+      font-weight: 700;
+    }
+  }
+}
+
+.social-box {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 5rem;
 }
