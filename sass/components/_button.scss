@@ -24,3 +24,19 @@
     }
   }
 }
+
+@media (min-width: 70em) {
+  .button {
+    width: 20.875rem;
+  }
+  .button--ios:hover,
+  .button--ios:focus {
+    background-color: $c-accent-600;
+    cursor: pointer;
+  }
+  .button--android:hover,
+  .button--android:focus {
+    background-color: $c-accent-400;
+    cursor: pointer;
+  }
+}

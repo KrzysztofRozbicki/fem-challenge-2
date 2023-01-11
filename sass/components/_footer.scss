@@ -2,6 +2,7 @@
 @use '../components/typography' as *;
 
 .footer {
+  position: relative;
   &__box {
     display: flex;
     flex-direction: column;
@@ -24,5 +25,12 @@
   .footer__box {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+@media (min-width: 70em) {
+  .footer__box {
+    margin: 0;
+    flex-grow: 1;
   }
 }

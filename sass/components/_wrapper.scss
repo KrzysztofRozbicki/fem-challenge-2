@@ -30,3 +30,20 @@
     padding-bottom: 5.5rem;
   }
 }
+
+@media (min-width: 70em) {
+  .wrapper {
+    padding-inline: 10.25rem;
+  }
+  .wrapper--hero {
+    padding: 8rem 16.25rem 20rem 10.25rem;
+    max-width: 100%;
+  }
+  .wrapper--footer {
+    padding-top: 12.5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 8.5rem;
+  }
+}

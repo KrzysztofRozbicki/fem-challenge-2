@@ -6,7 +6,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   color: $c-primary-700;
   background-image: url('../assets/bg-main-mobile.png');
-  background-position-y: -15rem;
+  background-position-y: -16rem;
   background-repeat: no-repeat;
   font-size: $fs-primary-100;
   &__decoration {
@@ -31,7 +31,7 @@
 @media (min-width: 30em) {
   .body {
     background-image: url('../assets/bg-main-tablet.png');
-    background-position: -26rem -16rem;
+    background-position-x: -26rem;
   }
   .body__decoration {
     width: 16.5rem;
@@ -44,4 +44,28 @@
     display: inline-block;
     padding-top: 3.875rem;
   }
+}
+
+@media (min-width: 70em) {
+  .body {
+    background-image: url('../assets/bg-main-desktop.png');
+  }
+  .body__decoration {
+    right: 0;
+  }
+}
+
+.attribution {
+  width: calc(100vw - 3rem);
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: max(10px, 1vh);
+  text-align: center;
+}
+
+.attribution a {
+  color: $c-primary-700;
+  font-weight: 700;
 }

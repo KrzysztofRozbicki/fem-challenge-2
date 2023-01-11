@@ -86,3 +86,41 @@
     left: 32%;
   }
 }
+
+@media (min-width: 70em) {
+  .cta {
+    padding-inline: 10.25rem;
+  }
+  .cta__photo {
+    width: 19.5rem;
+    top: -13.5rem;
+    left: 17rem;
+  }
+  .cta__background__decoration {
+    width: 312px;
+    height: 468px;
+    left: 341px;
+  }
+  .cta__header {
+    font-size: $fs-primary-250;
+    line-height: 1.3;
+    margin-bottom: 1.375rem;
+  }
+  .cta__text {
+    font-size: $fs-primary-125;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  .cta__price {
+    font-size: $fs-primary-400;
+    margin-bottom: 2.875rem;
+  }
+  .cta__box {
+    width: 446px;
+    padding: 3.625rem 3.625rem 3rem 3.375rem;
+    padding-bottom: 3rem;
+    transform: translate(0, 0);
+    top: 90px;
+    left: 743px;
+  }
+}
