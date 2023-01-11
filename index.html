@@ -17,6 +17,7 @@
   </head>
 
   <body class="body">
+    <img class="body__decoration" src="./assets/bg-pattern-1.svg" />
     <header class="header">
       <div class="wrapper wrapper--header">
         <a href="#" class="logo">
@@ -27,15 +28,13 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="wrapper wrapper--hero">
-          <h1 class="hero__header">We make your music sound extraordinary.</h1>
-          <p class="hero__text">
-            A system audio equalizer specifically designed for Android and iOS. Freely tune the way
-            your music sounds with a professional grade parametric EQ & volume mixer. Control bass,
-            mids, treble, gain control, reverb, and more!
-          </p>
-        </div>
+      <section class="hero wrapper wrapper--hero">
+        <h1 class="hero__header">We make your music sound extraordinary.</h1>
+        <p class="hero__text">
+          A system audio equalizer specifically designed for Android and iOS. Freely tune the way
+          your music sounds with a professional grade parametric EQ & volume mixer. Control bass,
+          mids, treble, gain control, reverb, and more!
+        </p>
       </section>
       <section class="cta">
         <img
@@ -43,7 +42,9 @@
           src="./assets/illustration-app.png"
           alt="Illustration of working app on mobile phone"
         />
-        <div class="cta__background"></div>
+        <div class="cta__background">
+          <img class="cta__background__decoration" src="./assets/bg-pattern-2.svg" />
+        </div>
         <div class="cta__box">
           <h2 class="cta__header">Premium EQ</h2>
           <p class="cta__text">
@@ -68,7 +69,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="wrapper">
+      <div class="wrapper wrapper--footer">
         <a href="#" class="logo">
           <svg width="146" height="32">
             <use href="./assets/icons.svg#logo"></use>
@@ -76,8 +77,8 @@
         </a>
         <div class="footer__box">
           <p class="footer__text">
-            All rights reserved © Equalizer 2021 Have any problems? Contact us via social media or
-            email us at
+            All rights reserved © Equalizer 2021<br />
+            Have any problems? Contact us via social media or email us at
             <a class="footer__text--email" href="mailto:equalizer@example.com">
               equalizer@example.com
             </a>

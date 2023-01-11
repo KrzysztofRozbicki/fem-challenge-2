@@ -1,0 +1,88 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.cta {
+  position: relative;
+  color: $c-primary-100;
+
+  &__background {
+    position: relative;
+    border-radius: 0.75rem;
+    height: 420px;
+    background-color: $c-primary-700;
+    z-index: 1;
+    overflow: hidden;
+    &__decoration {
+      width: 280px;
+      height: 420px;
+      margin-inline: auto;
+    }
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -6.125rem);
+    width: 13rem;
+    z-index: 2;
+  }
+  &__box {
+    position: relative;
+    transform: translateY(-2.5rem);
+    margin-bottom: -2.5rem;
+    z-index: 3;
+    border-radius: 0.75rem;
+    padding: 3rem 2.25rem;
+    background-color: $bg-primary-500;
+  }
+  &__header {
+    @extend .text-600;
+    margin-bottom: 0.75rem;
+  }
+  &__text {
+    @extend .text-450;
+    margin-bottom: 2rem;
+    &--duration {
+      font-size: $fs-primary-125;
+      position: absolute;
+      transform: translateY(50%);
+    }
+  }
+  &__price {
+    display: inline-block;
+    @extend .text-900;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 30em) {
+  .cta {
+    padding-inline: 2.25rem;
+  }
+  .cta__photo {
+    width: 16.875rem;
+    top: -8.5rem;
+    left: 6rem;
+    transform: translate(0, 0);
+  }
+
+  .cta__background {
+    height: 600px;
+  }
+  .cta__background__decoration {
+    overflow: hidden;
+    position: absolute;
+    top: -32px;
+    left: 225px;
+  }
+
+  .cta__box {
+    position: absolute;
+    width: 400px;
+    margin-bottom: 0;
+    padding: 3rem;
+    transform: translateY(-450px);
+    left: 32%;
+  }
+}

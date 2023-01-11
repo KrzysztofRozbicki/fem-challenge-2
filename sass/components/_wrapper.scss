@@ -1,0 +1,32 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  &--header {
+    padding-inline: 2.5rem;
+  }
+  &--hero {
+    padding: 8.5rem 1.5rem 4.25rem;
+  }
+  &--footer {
+    padding-inline: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 30em) {
+  .wrapper--hero {
+    margin-inline: 0;
+    max-width: 34.5rem;
+    padding: 6rem 0 7rem 2.25rem;
+  }
+  .wrapper--footer {
+    padding-inline: 2.25rem;
+    padding-top: 11.5rem;
+    padding-bottom: 5.5rem;
+  }
+}

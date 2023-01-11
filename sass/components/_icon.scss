@@ -1,0 +1,13 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.icon {
+  position: relative;
+  fill: currentColor;
+  display: inline-block;
+  &--button {
+    vertical-align: middle;
+    transform: translateY(-0.125rem);
+    margin-right: 0.25rem;
+  }
+}

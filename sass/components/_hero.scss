@@ -1,0 +1,32 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.hero {
+  position: relative;
+  &__photo {
+    display: none;
+  }
+  &__header {
+    @extend .text-700;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    @extend .text-400;
+    margin-bottom: 6.125rem;
+  }
+}
+
+@media (min-width: 30em) {
+  .hero__header {
+    font-size: $fs-primary-400;
+    line-height: 1;
+    margin-bottom: 1.75rem;
+    letter-spacing: -0.73px;
+  }
+  .hero__text {
+    font-size: $fs-primary-112;
+    line-height: 1.55;
+    letter-spacing: 0;
+    margin-bottom: 8.5rem;
+  }
+}

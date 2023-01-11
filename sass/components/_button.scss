@@ -1,0 +1,26 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.button {
+  display: block;
+  width: min((100vw - 4rem), 18.5rem);
+  margin-inline: auto;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  @extend .text-450;
+  font-weight: 700;
+  &--ios {
+    color: $c-primary-100;
+    background-color: $c-primary-700;
+    margin-bottom: 1rem;
+    &:hover,
+    &:focus {
+    }
+  }
+  &--android {
+    &:hover,
+    &:focus {
+    }
+  }
+}
